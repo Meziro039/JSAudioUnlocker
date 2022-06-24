@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <script src="jsplay.js"></script>
+    <script>
+        var music 
+        music = new Audio('music.mp3')
+        async function audiostart(){
+            await sleep(2)
+            stop()
+            await sleep(0.1)
+            music.play()
+        }
+        function audiostop(){
+            music.pause()
+            music.currentTime = 0
+            play()
+        }
+    </script>
+    <!-- まともに作るなら判定させて再生が終わったらplay()を実行する処理をさせる。 -->
+</head>
+<body>
+    <input type="button" id="play" value="Play" onclick="play()">
+    <input type="button" id="stop" value="Stop" onclick="stop()">
+    <input type="button" id="audiostart" value="AudioStart" onclick="audiostart()">
+    <input type="button" id="audiostop" value="AudioStop" onclick="audiostop()">
+</body>
+</html>
