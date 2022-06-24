@@ -14,7 +14,6 @@ function sleep(t){
 async function roop(){
 
     while (true){
-        console.log("hey")
         mute.play()
         await sleep(0.1)
 
