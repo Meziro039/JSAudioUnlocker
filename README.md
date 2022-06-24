@@ -7,6 +7,7 @@
 <script src="jsplay.js"></script>を一番上で読み込ませる。    
 `play()` = アンロック用トリガー  
 `stop()` = 再生したい音を鳴らす前に停止  
+*JavaScriptは、実際に実行するファイルの位置で階層を解釈するので必要に応じて`jsplay.js`内の`mute.mp3`を実行させるファイルから見た位置を指定してください。例:`JSAudioUnlocker/mute.mp3`
 
 ## 更新履歴
 v0.0.1
