@@ -4,9 +4,9 @@ JSAudioUnlockerは、音声の自動再生を
 ## 使い方
 
 ### 基本
-<script src="jsplay.js"></script>を一番上で読み込ませる。  
-`play()` = アンロック用トリガー
-`stop()` = 再生したい音を鳴らす前に停止
+<script src="jsplay.js"></script>を一番上で読み込ませる。    
+`play()` = アンロック用トリガー  
+`stop()` = 再生したい音を鳴らす前に停止  
 
 ## 更新履歴
 v0.0.1
