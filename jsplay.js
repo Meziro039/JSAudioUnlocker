@@ -1,8 +1,8 @@
 var mute // 無音音声
-var sw // 切り替え値
+var jsplay_sw // 切り替え値
 
 mute = new Audio("mute.mp3")
-sw = 0 // 0=Stop 1=Play
+jsplay_sw = 0 // 0=Stop 1=Play
 
 // 疑似Sleep
 function sleep(t){
@@ -18,7 +18,7 @@ async function roop(){
         await sleep(0.1)
 
         //break
-        if (sw == 0){
+        if (jsplay_sw == 0){
             mute.pause()
             break
         }
@@ -27,8 +27,8 @@ async function roop(){
 }
 
 async function play(){
-    if (sw != 1){
-        sw = 1
+    if (jsplay_sw != 1){
+        jsplay_sw = 1
         roop()   
     }
     else{
@@ -37,5 +37,7 @@ async function play(){
 }
 
 function stop(){
-    sw = 0
+    jsplay_sw = 0
 }
+
+// C/https://github.com/Meziro039
